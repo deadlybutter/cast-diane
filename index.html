@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Cast Diane</title>
+    <link href="style.css" rel="stylesheet">
+  </head>
+  <body>
+    <article class="container">
+      <div>
+        <h1>Thanks for your interest!</h1>
+        <p>
+          I do agree that the call to action is an integral part of every smart social campaign. What one action are you asking people to take? What is the content that will convince people to take it?
+        </p>
+        <p>
+          You have to know your audience (in this case it’s you) and what type of content they want to see (I’m assuming nothing mundane about my skills or hobbies in a tweet to convince you to hire me). In order to get someone’s interest and convert them further, you have to think out of the box and make them want to take action.
+        </p>
+        <p>
+          The content leading up to the CTA should be relevant and give context for why someone will be taking that action. I chose to do something Twitter related and wanted you to click on the URL for info on how to cast/hire me which led you here.
+        </p>
+        <p>
+          Thanks for considering me.
+          -Diane
+        </p>
+
+        <button id="hidden-cast-control">CAST DIANE FOR TWITTER DOT COM</button>
+        <p id="hidden-cast-message" class="-hidden -center">(this button doesn't actually do anything)</p>
+      </div>
+    </article>
+
+    <script>
+      let count = 0;
+      const button = document.getElementById('hidden-cast-control');
+      const message = document.getElementById('hidden-cast-message');
+
+      button.onclick = function() {
+        count++;
+
+        if (count >= 3) {
+          message.style.display = 'block';
+        }
+      };
+    </script>
+  </body>
+</html>
